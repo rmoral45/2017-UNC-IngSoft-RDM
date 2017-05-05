@@ -1,0 +1,214 @@
+05-May-2017 11:46:25.118 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.14
+05-May-2017 11:46:25.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 13 2017 12:55:45 UTC
+05-May-2017 11:46:25.190 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.14.0
+05-May-2017 11:46:25.191 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+05-May-2017 11:46:25.192 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+05-May-2017 11:46:25.193 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-May-2017 11:46:25.193 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_121\jre
+05-May-2017 11:46:25.194 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+05-May-2017 11:46:25.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-May-2017 11:46:25.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14
+05-May-2017 11:46:25.196 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14
+05-May-2017 11:46:25.198 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\conf\logging.properties
+05-May-2017 11:46:25.199 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-May-2017 11:46:25.201 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-May-2017 11:46:25.203 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-May-2017 11:46:25.204 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14
+05-May-2017 11:46:25.206 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14
+05-May-2017 11:46:25.208 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\temp
+05-May-2017 11:46:25.210 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat 1.2.12 con la versión APR 1.5.2.
+05-May-2017 11:46:25.212 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true].
+05-May-2017 11:46:25.214 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-May-2017 11:46:26.162 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente (OpenSSL 1.0.2k  26 Jan 2017)
+05-May-2017 11:46:27.173 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-May-2017 11:46:27.301 GRAVE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["http-nio-8080"]
+ java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:968)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+
+05-May-2017 11:46:27.314 GRAVE [main] org.apache.catalina.core.StandardService.initInternal No pude inicializar el conector [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: org.apache.catalina.LifecycleException: Falló la inicialización del manejador de protocolo
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:970)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:968)
+	... 13 more
+
+05-May-2017 11:46:27.317 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 11:46:28.002 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-May-2017 11:46:28.005 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Initialization processed in 4488 ms
+05-May-2017 11:46:28.122 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio Catalina
+05-May-2017 11:46:28.123 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.14
+05-May-2017 11:46:28.142 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\docs de la aplicación web
+05-May-2017 11:46:29.140 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\docs has finished in 995 ms
+05-May-2017 11:46:29.141 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\examples de la aplicación web
+05-May-2017 11:46:29.834 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\examples has finished in 692 ms
+05-May-2017 11:46:29.834 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\host-manager de la aplicación web
+05-May-2017 11:46:29.874 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\host-manager has finished in 40 ms
+05-May-2017 11:46:29.875 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\manager de la aplicación web
+05-May-2017 11:46:29.917 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\manager has finished in 41 ms
+05-May-2017 11:46:29.917 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\ROOT de la aplicación web
+05-May-2017 11:46:29.964 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\ROOT has finished in 47 ms
+05-May-2017 11:46:29.971 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 11:46:29.984 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in 1978 ms
+05-May-2017 11:50:06.607 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-May-2017 11:50:06.611 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 11:50:06.870 INFORMACIÓN [Thread-4] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+05-May-2017 11:50:07.034 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 11:50:07.037 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-May-2017 11:50:07.038 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-May-2017 11:50:07.038 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 11:55:26.637 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.14
+05-May-2017 11:55:26.641 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 13 2017 12:55:45 UTC
+05-May-2017 11:55:26.641 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.14.0
+05-May-2017 11:55:26.641 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+05-May-2017 11:55:26.642 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+05-May-2017 11:55:26.642 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-May-2017 11:55:26.642 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_121\jre
+05-May-2017 11:55:26.642 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+05-May-2017 11:55:26.643 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-May-2017 11:55:26.643 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14
+05-May-2017 11:55:26.643 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14
+05-May-2017 11:55:26.644 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\conf\logging.properties
+05-May-2017 11:55:26.644 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-May-2017 11:55:26.645 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-May-2017 11:55:26.646 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-May-2017 11:55:26.647 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14
+05-May-2017 11:55:26.647 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14
+05-May-2017 11:55:26.649 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\temp
+05-May-2017 11:55:26.650 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat 1.2.12 con la versión APR 1.5.2.
+05-May-2017 11:55:26.651 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true].
+05-May-2017 11:55:26.652 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-May-2017 11:55:27.591 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente (OpenSSL 1.0.2k  26 Jan 2017)
+05-May-2017 11:55:27.789 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-May-2017 11:55:27.810 GRAVE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["http-nio-8080"]
+ java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:968)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+
+05-May-2017 11:55:27.814 GRAVE [main] org.apache.catalina.core.StandardService.initInternal No pude inicializar el conector [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: org.apache.catalina.LifecycleException: Falló la inicialización del manejador de protocolo
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:970)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:968)
+	... 13 more
+
+05-May-2017 11:55:27.818 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 11:55:28.050 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-May-2017 11:55:28.053 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2007 ms
+05-May-2017 11:55:28.095 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio Catalina
+05-May-2017 11:55:28.095 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.14
+05-May-2017 11:55:28.107 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\docs de la aplicación web
+05-May-2017 11:55:28.610 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\docs has finished in 501 ms
+05-May-2017 11:55:28.611 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\examples de la aplicación web
+05-May-2017 11:55:29.506 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\examples has finished in 895 ms
+05-May-2017 11:55:29.507 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\host-manager de la aplicación web
+05-May-2017 11:55:29.586 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\host-manager has finished in 78 ms
+05-May-2017 11:55:29.587 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\manager de la aplicación web
+05-May-2017 11:55:29.652 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\manager has finished in 65 ms
+05-May-2017 11:55:29.657 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\ROOT de la aplicación web
+05-May-2017 11:55:29.709 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Ramiro\Ing-Soft-Test\2017-UNC-IngSoft-RDM\Utils\apache-tomcat-8.5.14\webapps\ROOT has finished in 52 ms
+05-May-2017 11:55:29.733 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 11:55:29.767 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in 1712 ms
+05-May-2017 12:49:12.339 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-May-2017 12:49:12.342 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 12:49:12.496 INFORMACIÓN [Thread-4] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+05-May-2017 12:49:12.548 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+05-May-2017 12:49:12.551 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-May-2017 12:49:12.551 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-May-2017 12:49:12.552 INFORMACIÓN [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
