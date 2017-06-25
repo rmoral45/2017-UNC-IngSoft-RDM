@@ -1,7 +1,8 @@
-/**
+package pkt; /**
  * Created by Ramiro on 24/6/2017.
  */
 
+import javax.sound.sampled.spi.AudioFileReader;
 import javax.swing.*;
 import java.awt.*;
 
@@ -19,46 +20,23 @@ public class Gui00 extends JFrame {
     public JPanel panel1 = new JPanel();
     public JPanel panel2 = new JPanel();
 
-    public Gui00() {
 
+    public Gui00() {
 
         //aca instancio el controller
 
         super("Don't Forget It");
-        setLayout(new BorderLayout());      //Layout de la ventana pcpal
+        setLayout(new GridLayout(2,1));      //Layout de la ventana pcpal
+
+        JLabel img = new JLabel("img.jpg");
+        panel1.add(img);
 
 
-        panel1.setLayout(new GridLayout(1, 3, 5, 5));
+       /* panel1.setLayout(new GridLayout(2, 1, 5, 5));
 
         JButton CargarButton = new JButton("Cargar serie");
         JButton AgregarButton = new JButton("Agregar Serie");
 
-        MouseListener CargarListener = new MouseListener() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-
-            }
-        };
 
         MouseListener AgregarListener = new MouseListener() {
             @Override
@@ -87,23 +65,20 @@ public class Gui00 extends JFrame {
             }
         };
 
-        CargarButton.addMouseListener(CargarListener);
+        AgregarButton.addMouseListener(AgregarListener);
 
 
-        panel1.add(CargarButton);
-        panel1.add();
-        panel1.add();
+        panel1.add(AgregarButton);
         panel1.setVisible(true);
 
 
         panel2.setLayout(new BorderLayout());
-        panel2.add(new JTextField("Ingrese el nombre de la serie    "), BorderLayout.NORTH);
         panel2.add(panel1, BorderLayout.EAST);
 
         add(panel2, BorderLayout.SOUTH);
+*/
 
-
-        setSize(400, 400);
+        setSize(400, 100);
         setVisible(true);
         setDefaultCloseOperation(3);
 
